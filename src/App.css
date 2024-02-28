@@ -1,0 +1,405 @@
+:root {
+  --backgroun-dark-: #191a1c;
+  --backgroun-gray-: #484445;
+  --backgroun-dilla-: #bc8023;
+  --backgroun-pie-: #c0ab67d2;
+  --backgroun-pie-hover-: #c0ab67ab;
+  --backgroun-: #fff;
+  --background-image-: url("./assets/wallpaper.jpg");
+}
+
+html {
+  font-size: 62.5%;
+  width: 100vw;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+#root,
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Main content */
+.main-blog-content {
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+.header {
+  background: var(--backgroun-);
+  height: 10%;
+  /* width: 100vw; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.content-header {
+  width: 100%;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--backgroun-dilla-);
+}
+.active {
+  color: var(--backgroun-dilla-);
+}
+
+.links-ul{
+  margin-left:6%;
+}
+
+/* Main */
+.main-content {
+  width: 100%;
+  height: auto; 
+  /* Organizar el alto del contenedor */
+}
+
+/* Home */
+.home-content {
+  height: 100%;
+}
+
+.home-introduction {
+  height: 90vh;
+}
+
+.logotype-home {
+  height: 100%;
+  background: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us{
+  background: var(--backgroun-pie-);
+  border:none;
+}
+
+.contact-us:hover{
+  background: var(--backgroun-pie-hover-);
+  border:none;
+}
+
+.contact-us a{
+  text-decoration: none;
+  color: white; 
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.description-about-us-home{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.info-home {
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.432), rgba(255, 255, 255, 0.5)), var(--background-image-);
+  /* Ajusta el valor rgba para controlar la opacidad del linear gradient */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; 
+}
+
+/* Article */
+.articles-home-section{
+  /* margin-top: 5%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title-section-articles{
+  margin: 3% 0;
+  font-size: 3rem;
+  color: var(--backgroun-pie-hover-); 
+
+}
+
+.main-content-article{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.article{
+  width: 30%;
+  height: 60vh;
+  border: 1px solid rgb(212, 212, 212); 
+  border-radius: 10px; 
+  padding: 1%;
+  margin: 1%
+}
+
+.article:hover{
+  background: rgb(236, 236, 236);
+  cursor: pointer;
+}
+
+.header-article{
+  width: 100%;
+  height: 50%;
+}
+
+.image-article{
+  border-radius: 10px;
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+
+.main-article{
+  padding-top: 4%;
+  width: 100%;
+  height: 30%;
+}
+
+.main-article>p, .footer-article>p{
+  font-size: 1.4rem;
+}
+
+.footer-article{
+  width: 100%;
+  height: 20%;
+}
+
+.buttons-article{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.buttons-article button{
+  margin: 1%;
+  font-size: 1.3rem;
+}
+
+.edit-button:hover{
+  background: #0056d8;
+  border: 1px solid green;
+}
+
+.delete-button:hover{
+  background: red;
+  border: 1px solid red;
+}
+
+/* Articles landing */
+.main-content-allArticles{
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.titles-create{
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.allArticles-content{
+  width: 100%;
+  padding: 2%; 
+  min-height: 75.5vh;
+  height: auto;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.allArticles-content .main-content-article{
+  width: 30%;
+  margin: 1%
+}
+
+.allArticles-content .main-content-article article{
+  width: 100%;
+}
+
+.seeker{
+  margin-top: 1%;
+}
+
+#seeker{
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+/* Contact */
+.contact-main-content{
+  height: 80vh;
+}
+.form-contact, .form-contact input, .form-contact textarea{
+  font-size: 1.5rem;
+}
+
+.btn-contact{
+  width: 20%;
+}
+
+/* Create */
+.btn-submit{
+  width: 30%;
+  font-size: 1.5rem;
+  background: var(--backgroun-pie-); 
+  border: none; 
+}
+
+.btn-submit:hover{
+  background: var(--backgroun-pie-hover-);
+}
+
+.form-create label{
+  font-weight: 500;
+}
+
+#contentArticle{
+  resize: none;
+}
+
+/* footer */
+.main-footer{
+  height: 10%;
+  background: var(--backgroun-pie-hover-);
+  color: black; 
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Loader */
+.loader {
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  margin: 20% auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#errorMessage{
+  color: rgb(255, 65, 65);
+}
+
+
+.content-article-paragraph{
+  margin: 1%;
+}
+
+
+/* Article section */
+.specific-article{
+  width: 100%;
+  height: auto;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5%;
+}
+
+.specific-header{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.specific-image{
+  height: 100%;
+  width: auto;
+  border-radius: 5px;
+}
+
+.specific-main{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  text-align: start;
+}
+
+.specific-main h3{
+  font-size: 2.5rem;
+  margin-bottom: 2%; 
+}
+
+.specific-content{
+  font-size: 1.45rem;
+}
+
+.specific-footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.specific-footer p{
+  font-size:1.4rem; 
+  color: black; 
+  font-weight: 500;
+}
+
+.specific-buttons-footer{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.specific-buttons-footer button{
+  width: 25%;
+  font-size: 1.4rem;
+  margin: 2%;
+}
+
+
+
